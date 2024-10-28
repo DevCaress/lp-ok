@@ -8,5 +8,8 @@ export default defineNuxtConfig({
     '~/assets/css/reset.css'  
   ],
 
-  modules: ['vue3-carousel-nuxt']
+  modules: ['vue3-carousel-nuxt'],
+  app: {
+    baseURL: process.env.NODE_ENV === 'production' ? '/lp-ok/' : '/',
+  },
 })
