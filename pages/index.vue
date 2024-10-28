@@ -97,7 +97,7 @@ onUnmounted(() => {
           <slide v-for="(slide, index) in 17" :key="slide">
             <div class="slider">
               <figure>
-                <img :src="`/brands/${index + 1}.png`" alt="">
+                <img :src="`${useRuntimeConfig().public.baseURL}/brands/${index + 1}.png`" alt="">
               </figure>
             </div>
           </slide>
@@ -248,7 +248,7 @@ onUnmounted(() => {
           </p>
           <div class="payments">
             <figure v-for="(item, index) in 6" :key="index">
-              <img :src="`/payments/${index + 1}.png`" alt="">
+              <img :src="`${useRuntimeConfig().public.baseURL}/payments/${index + 1}.png`" alt="">
             </figure>
           </div>
           <a href="">Ver más</a>
