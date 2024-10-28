@@ -13,4 +13,9 @@ export default defineNuxtConfig({
     baseURL: '/lp-ok/',
     buildAssetsDir: 'assets'
   },
+  runtimeConfig: {
+    public: {
+      baseURL: process.env.NODE_ENV === 'production' ? '/lp-ok/' : '/',
+    },
+  },
 })
