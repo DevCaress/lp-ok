@@ -10,6 +10,7 @@ export default defineNuxtConfig({
 
   modules: ['vue3-carousel-nuxt'],
   app: {
-    baseURL: process.env.NODE_ENV === 'production' ? '/lp-ok/' : '/',
-  },
+    baseURL: '/nuxt-github-pages/',
+    buildAssetsDir: 'assets'
+  }
 })
