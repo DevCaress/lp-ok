@@ -10,6 +10,7 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
+    "@jpcreativemedia/nuxt-animate.css": "^1.0.6",
     "nuxt": "^3.13.2",
     "vue": "latest",
     "vue-router": "latest",

@@ -8,8 +8,8 @@
       <div class="items">
         <div class="item">
           <p class="title green">México</p>
-          <p class="desc green">INTRA VENTURES MEXICO S.C
-            Mar Mediterráneo 1255-4 Col. Country ClubGuadalajara, Jalisco C.P. 44610</p>
+          <p class="desc green">
+            Mar Mediterráneo 1255-4 Col. Country Club Guadalajara, Jalisco C.P. 44610</p>
         </div>
 
         <div class="item">
@@ -23,8 +23,17 @@
 
         <div class="item">
           <p class="title yellow">Encuéntranos en:</p>
-          <p class="desc yellow">
-            Mar Mediterráneo 1255-4 Col. Country ClubGuadalajara, Jalisco C.P. 44610</p>
+          <div class="networks">
+            <figure>
+              <img src="~/public/linkedin.png" alt="">
+            </figure>
+            <figure>
+              <img src="~/public/instagram.png" alt="">
+            </figure>
+            <figure>
+              <img src="~/public/youtube.png" alt="">
+            </figure>
+          </div>
         </div>
       </div>
       <div class="copy">
