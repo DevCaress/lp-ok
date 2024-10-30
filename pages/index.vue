@@ -122,9 +122,11 @@ onUnmounted(() => {
             </p>
           </div>
           <div>
-            <button class="btn">
-              Agenda una demo
-            </button>
+            <a href="https://api.whatsapp.com/send?phone=+523331892418&text=Hola+estoy+interesado+en+una+demo+de+Orkestra" target="_blank">
+              <button class="btn">
+                Agenda una demo
+              </button>
+            </a>
           </div>
         </div>
         <div class="gif animate__animated animate__fadeInLeft">

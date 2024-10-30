@@ -4,7 +4,9 @@
       <button class="btn">Agenda una demo</button>
       <div>
         <IconsSupport />
-        <p class="text-white">Soporte</p>
+        <a href="https://api.whatsapp.com/send?phone=+523331272343&text=Hola+requiero+soporte" target="_blank">
+          <p class="text-white">Soporte</p>
+        </a>
       </div>
     </div>
     <div class="colors">
@@ -17,11 +19,14 @@
     <div class="container">
       <IconsMainLogo />
       <div>
-        <button class="btn">Agenda una demo</button>
-        <div class="whats">
+        <a href="https://api.whatsapp.com/send?phone=+523331892418&text=Hola+estoy+interesado+en+una+demo+de+Orkestra"
+          target="_blank">
+          <button class="btn">Agenda una demo</button>
+        </a>
+        <!-- <div class="whats">
           <IconsWhatsapp />
           <p>Contáctanos</p>
-        </div>
+        </div> -->
       </div>
     </div>
   </div>
