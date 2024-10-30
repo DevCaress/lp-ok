@@ -180,7 +180,7 @@ onUnmounted(() => {
 
       <div class="video container" controls>
         <div class="video-container">
-          <video src="~/public/video1.mp4" controls>
+          <video src="~/public/video1.mp4" controls poster="~/public/poster1.png">
             Tu navegador no admite el elemento <code>video</code>.
           </video>
         </div>
@@ -268,7 +268,7 @@ onUnmounted(() => {
 
       <div class="video container" controls>
         <div class="video-container">
-          <video src="~/public/video2.mp4" controls>
+          <video src="~/public/video2.mp4" controls poster="~/public/poster2.png">
             Tu navegador no admite el elemento <code>video</code>.
           </video>
         </div>
@@ -276,44 +276,51 @@ onUnmounted(() => {
       </div>
 
       <div class="gif-1 gif container">
-        <div>
-          <figure>
-            <img src="~/public/gif4.gif" alt="">
-          </figure>
-        </div>
-        <div class="text">
-          <p class="title main-title">Descubre la magia de las ventas personalizadas creando catálogos shoppeables</p>
-          <p class="desc">
-            Asombra a tu cliente sugiriendo productos acorde a sus gustos con relación a sus compras anteriores.
-          </p>
-          <p class="desc">
-            Encuentra de inmediato productos con el buscador y escáner de Orkestra y vende a distancia agregándolos al
-            carrito y compartiendo el catálogo a tu cliente.
-          </p>
-          <!-- <a href="">Ver más</a> -->
-        </div>
+        <Animate v-bind:scroll="true" animation="animate__zoomInLeft">
+          <div>
+            <figure>
+              <img src="~/public/gif4.gif" alt="">
+            </figure>
+          </div>
+        </Animate>
+        <Animate v-bind:scroll="true" animation="animate__zoomIn">
+          <div class="text">
+            <p class="title main-title">Descubre la magia de las ventas personalizadas creando catálogos shoppeables</p>
+            <p class="desc">
+              Asombra a tu cliente sugiriendo productos acorde a sus gustos con relación a sus compras anteriores.
+            </p>
+            <p class="desc">
+              Encuentra de inmediato productos con el buscador y escáner de Orkestra y vende a distancia agregándolos al
+              carrito y compartiendo el catálogo a tu cliente.
+            </p>
+            <!-- <a href="">Ver más</a> -->
+          </div>
+        </Animate>
       </div>
 
       <div class="gif-2 gif container">
-
-        <div class="text">
-          <p class="title main-title">Crea ligas de pago</p>
-          <p class="desc">
-            Vende a distancia creando y compartiendo ligas de pago de las principales pasarelas del mercado directo en
-            Orkestra.
-          </p>
-          <div class="payments">
-            <figure v-for="(item, index) in 6" :key="index">
-              <img :src="`${useRuntimeConfig().public.baseURL}payments/${index + 1}.png`" alt="">
+        <Animate v-bind:scroll="true" animation="animate__zoomInRight">
+          <div class="text">
+            <p class="title main-title">Crea ligas de pago</p>
+            <p class="desc">
+              Vende a distancia creando y compartiendo ligas de pago de las principales pasarelas del mercado directo en
+              Orkestra.
+            </p>
+            <div class="payments">
+              <figure v-for="(item, index) in 6" :key="index">
+                <img :src="`${useRuntimeConfig().public.baseURL}payments/${index + 1}.png`" alt="">
+              </figure>
+            </div>
+            <!-- <a href="">Ver más</a> -->
+          </div>
+        </Animate>
+        <Animate v-bind:scroll="true" animation="animate__zoomIn">
+          <div>
+            <figure>
+              <img src="~/public/gif5.gif" alt="">
             </figure>
           </div>
-          <!-- <a href="">Ver más</a> -->
-        </div>
-        <div>
-          <figure>
-            <img src="~/public/gif5.gif" alt="">
-          </figure>
-        </div>
+        </Animate>
       </div>
 
       <div class="flex-2">
@@ -325,76 +332,88 @@ onUnmounted(() => {
       </div>
 
       <div class="gif-3 gif container">
-        <div>
-          <figure>
-            <img src="~/public/gif6.gif" alt="">
-          </figure>
-        </div>
-        <div class="text">
-          <p class="title main-title">Agenda del vendedor</p>
-          <p class="desc">
-            Desde su agenda Orkestra, cada vendedor gestiona sus contactos a realizar, seguimientos por hacer, y
-            visualiza
-            sus prospecciones convertidas en venta. </p>
-          <!-- <a href="">Ver más</a> -->
-        </div>
+        <Animate v-bind:scroll="true" animation="animate__zoomInLeft">
+          <div>
+            <figure>
+              <img src="~/public/gif6.gif" alt="">
+            </figure>
+          </div>
+        </Animate>
+        <Animate v-bind:scroll="true" animation="animate__zoomIn">
+          <div class="text">
+            <p class="title main-title">Agenda del vendedor</p>
+            <p class="desc">
+              Desde su agenda Orkestra, cada vendedor gestiona sus contactos a realizar, seguimientos por hacer, y
+              visualiza
+              sus prospecciones convertidas en venta. </p>
+            <!-- <a href="">Ver más</a> -->
+          </div>
+        </Animate>
       </div>
 
       <div class="gif-2 gif container">
-
-        <div class="text">
-          <p class="title main-title">Monitorea el desempeño de tus asesores</p>
-          <p class="desc">
-            Toda interacción queda registrada para el control monitoreo y supervisión.
-          </p>
-          <p class="desc">
-            Trazabilidad y reporteo, desde la asignación del cliente hasta el cierre de la venta, sin importar el canal
-            donde se concretó.
-          </p>
-          <!-- <a href="">Ver más</a> -->
-        </div>
-        <div>
-          <figure>
-            <img src="~/public/gif7.gif" alt="">
-          </figure>
-        </div>
+        <Animate v-bind:scroll="true" animation="animate__zoomIn">
+          <div class="text">
+            <p class="title main-title">Monitorea el desempeño de tus asesores</p>
+            <p class="desc">
+              Toda interacción queda registrada para el control monitoreo y supervisión.
+            </p>
+            <p class="desc">
+              Trazabilidad y reporteo, desde la asignación del cliente hasta el cierre de la venta, sin importar el
+              canal
+              donde se concretó.
+            </p>
+            <!-- <a href="">Ver más</a> -->
+          </div>
+        </Animate>
+        <Animate v-bind:scroll="true" animation="animate__zoomInRight">
+          <div>
+            <figure>
+              <img src="~/public/gif7.gif" alt="">
+            </figure>
+          </div>
+        </Animate>
       </div>
     </section>
     <section class="sales">
+
       <div class="insights ">
         <div class="gradient">
-          <div class="container">
-            <div class="insight" v-for="(img, index) in imgs" :key="index" :ref="el => counterSections[index] = el"
-              :class="{ 'border-right': index != 2 && index != 5 }">
-              <figure>
-                <img :src="img.src" alt="">
-              </figure>
-              <div class="number">
-                <p>{{ img.number1 }} <span class="counter">{{ displayValues[index] }}</span> {{ img.number2
-                  }}
-                </p>
+          <Animate v-bind:scroll="true" animation="animate__bounceIn">
+            <div class="container">
+              <div class="insight" v-for="(img, index) in imgs" :key="index" :ref="el => counterSections[index] = el"
+                :class="{ 'border-right': index != 2 && index != 5 }">
+                <figure>
+                  <img :src="img.src" alt="">
+                </figure>
+                <div class="number">
+                  <p>{{ img.number1 }} <span class="counter">{{ displayValues[index] }}</span> {{ img.number2
+                    }}
+                  </p>
+                </div>
+                <div class="text">
+                  <p>{{ img.text }}</p>
+                </div>
               </div>
+            </div>
+          </Animate>
+        </div>
+      </div>
+      <Animate v-bind:scroll="true" animation="animate__headShake">
+        <div class="countries container">
+
+          <p class="title">Con presencia en 6 países:</p>
+
+          <div class="">
+            <div class="country" v-for="(country, index) in countries" :key="index">
+              <component :is="country.src" />
               <div class="text">
-                <p>{{ img.text }}</p>
+                <p> {{ country.text }} </p>
               </div>
             </div>
           </div>
         </div>
-
-      </div>
-      <div class="countries container">
-
-        <p class="title">Con presencia en 6 países:</p>
-
-        <div class="">
-          <div class="country" v-for="(country, index) in countries" :key="index">
-            <component :is="country.src" />
-            <div class="text">
-              <p> {{ country.text }} </p>
-            </div>
-          </div>
-        </div>
-      </div>
+      </Animate>
       <div class="increase-sales">
         <p class="title main-title">Así, imposible que no incrementes tus ventas</p>
         <p class="text">
