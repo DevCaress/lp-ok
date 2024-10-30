@@ -30,6 +30,10 @@
 .video {
   padding: 2rem 3rem;
 
+  @media (max-width: 768px) {
+    padding: 2rem 1rem;
+  }
+
   .video-container {
     position: relative;
     width: 100%;
@@ -329,6 +333,12 @@
 
     @media (max-width: 768px) {
       padding: 2rem 0rem 0;
+    }
+
+    &.main-title{
+      @media (max-width: 768px) {
+        padding: 2rem 1rem;
+      }
     }
 
     span {
