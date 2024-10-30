@@ -1,7 +1,9 @@
 <template>
   <header class="header">
     <div class="container bg-blue">
-      <button class="btn">Agenda una demo</button>
+      <a href="https://api.whatsapp.com/send?phone=+523331272343&text=Hola+requiero+soporte" target="_blank">
+        <button class="btn">Agenda una demo</button>
+      </a>
       <div>
         <IconsSupport />
         <a href="https://api.whatsapp.com/send?phone=+523331272343&text=Hola+requiero+soporte" target="_blank">
